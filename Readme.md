@@ -58,7 +58,7 @@ Backend created for extraavalue using NOdejs and Mongodb and deployed on cyclic
 
 to run the app and dont forget to update the npm pacakages by `npm i`
 
-server-deploy-live https://carmine-jellyfish-tie.cyclic.app/
+server-deploy-live_on-cyclic https://carmine-jellyfish-tie.cyclic.app/
 
 current CRUD and basic search is working
 
