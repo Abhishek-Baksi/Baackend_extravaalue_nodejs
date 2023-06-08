@@ -10,6 +10,7 @@ const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConn");
 const mongoose = require("mongoose");
 const { logEvents } = require("./middleware/logger");
+const Product = require("./models/productsModel");
 const PORT = process.env.PORT || 3500;
 
 console.log(process.env.NODE_ENV);
@@ -21,6 +22,12 @@ app.use(cookieParser());
 
 app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/", require("./routes/root"));
+
+// Include productRoutes
+const productController= require("./controllers/productController");
+app.use(productController);
+
+
 
 // "*" Routes handling
 app.all("*", (req, res) => {
