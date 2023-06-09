@@ -1,7 +1,8 @@
 const allowedOrigins = [
-    'http://localhost:3000',
+    'https://main--coruscating-nougat-039503.netlify.app',
     'https://www.extraavalue.com',
     'https://extraavalue.com'
-]
-
-module.exports = allowedOrigins
+    // Add other allowed origins here
+  ];
+  
+  module.exports = allowedOrigins;
